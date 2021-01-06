@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>經濟圖表整合-10844105</title>
+    
+    <style>
+        body{
+            background-color: rgb(0, 0, 0);
+            color:  	 	 	#d309ee;
+            font-size: 50px;
+            font-weight: 300;
+            font-family: '微軟正黑體';
+        }
+
+        .text1{
+            position: absolute;
+            top: 50px;
+            left: 36%;
+            font-size: 55px;
+            font-weight: 400;
+        }
+
+        
+        .chart1{
+            position: absolute;
+            top: 200px;
+        }
+
+        .chart2{
+            position: absolute;
+            top: 800px;
+            left: 600px;
+        }
+        .chart3{
+            position: absolute;
+            top: 1400px;
+        }
+
+        div p img {
+        position: absolute;
+        left: 850px;
+        top: 190px;
+        z-index: 1;
+        /*設定第一張圖為圖層1*/
+        transition: all 1s;
+        filter: FlipH;
+    }
+
+    div p img:first-child {
+        z-index: 2;
+        /*設定第二張圖為圖層2*/
+        backface-visibility: hidden;
+        /*隱藏後圖*/
+    }
+
+    div p:hover img {
+        transform: rotateY(180deg);
+        /*水平翻轉*/
+    }
+
+    h3 img:first-child {
+        z-index: 2;
+        /*設定第二張圖為圖層2*/
+        backface-visibility: hidden;
+        /*隱藏後圖*/
+    }
+
+    h3:hover img {
+        transform: rotateY(180deg);
+        /*水平翻轉*/
+    }
+    .a1 {
+            position: absolute;
+            left: -750px;
+            top: 620px;
+            z-index: 1;
+            /*設定第一張圖為圖層1*/
+            transition: all 1s;
+            filter: FlipH;
+        }
+
+        .a1 :first-child {
+            z-index: 2;
+            /*設定第二張圖為圖層2*/
+            backface-visibility: hidden;
+            /*隱藏後圖*/
+        }
+
+        .a1:hover img {
+            transform: rotateY(180deg);
+            /*水平翻轉*/
+        }
+
+        .a2 {
+            position: absolute;
+        left: 0px;
+        top: 1230px;
+        z-index: 1;
+        /*設定第一張圖為圖層1*/
+        transition: all 1s;
+        filter: FlipH;
+        }
+
+        .a2 :first-child {
+            z-index: 2;
+            /*設定第二張圖為圖層2*/
+            backface-visibility: hidden;
+            /*隱藏後圖*/
+        }
+
+        .a2:hover img {
+            transform: rotateY(180deg);
+            /*水平翻轉*/
+        }
+    </style>
+</head>
+<body>
+    <a class="text1">經濟圖表整合</a>
+    <a class="chart1"><iframe src="https://plotdb.io/v/chart/28495" width="700px" height="490px" allowfullscreen="true" frameborder="0"></iframe></a>
+    <div>
+        <p><img src="經濟.png" width="400" height="400"><img src="經濟反.png" width="400" height="400"></p>
+    </div>
+    <a class="chart2"><iframe src="https://plotdb.io/v/chart/28489" width="700px" height="490px" allowfullscreen="true" frameborder="0"></iframe></a>
+    <div class="a1">
+        <p><img src="物價.png" width="400" height="400"><img src="物價反.png" width="400" height="400"></a></p>
+    </div>
+    <a class="chart3">
+        <iframe src="https://plotdb.io/v/chart/28488" width="700px" height="490px" allowfullscreen="true" frameborder="0"></iframe>
+    </a>
+    <div class="a2">
+        <p><img src="失業.png" width="400" height="400"><img src="失業反.png" width="400" height="400"></a></p>
+    </div>
+    <br>
+    
+</body>
+</html>
